@@ -121,6 +121,7 @@ main {
     flex: 1;
     min-height: 0;
     margin-bottom: 1rem;
+    width: ;
 }
 
 
@@ -195,22 +196,44 @@ main {
     background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
     border-radius: 1rem;
     margin: 1rem 2rem;
-    padding: 1rem;
     font-size: 0.9rem;
     box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
     justify-content: space-between;
 }
 
-.card-timeline img {
-    height: 100%;
-}
-
 .card-timeline .timeline-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 70%;
+    /* width: 70%; */
+    /* justify-content: space-between; */
+    /* margin: 1rem; */
+}
+
+.timeline-info {
     padding-left: 1rem;
+    justify-content: center;
+}
+
+.card-timeline img {
+    width: 40%;
+    border-radius: 0 1rem 1rem 0;
+}
+
+/* STYLING SPACE BERITA */
+.berita {
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.berita img {
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.berita p {
+    margin-top: 1rem;
+    text-align: justify;
+    text-indent: 3rem;
 }
 
 /* STYLING DAFTAR BAB */
@@ -229,11 +252,10 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 
 /* STYLING DAFTAR SUBBAB */
-
 
 .card-subchapter {
     width: 30%;
