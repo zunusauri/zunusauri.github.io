@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #426696;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+h2,
+p {
+    color: #658ec6;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+h3 {
+    color: #426696;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+main {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #5EC2FB, #5ECBEB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background: white;
+    min-height: 90vh;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    border-radius: 2rem;
+    display: flex;
+}
+
+.dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+    border-radius: 2rem 0 0 2rem;
+}
+
+.dashboard .user img {
+    width: 80px;
+    border-radius: 50%;
+}
+
+.dashboard .links .link img {
+    width: 25px;
+}
+
+.link {
+    display: flex;
+    margin: 1rem 0rem;
+    padding: 0.5rem 2rem;
+    align-items: center;
+}
+
+.link a {
+    text-decoration: none;
+    padding: 0rem 1rem;
+    font-size: 1.2rem;
+}
+
+.pro {
+    width: 80%;
+    background: linear-gradient(to right top, #6398FF, #5ECBEB);
+    border-radius: 1rem;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+}
+
+.pro img {
+    position: absolute;
+    width: 2.5rem;
+    top: 25%;
+    right: 5%;
+}
+
+.pro h3 {
+    width: 80%;
+    color: white;
+    font-weight: 600;
+    opacity: 1;
+}
+
+/* MENU */
+.menu {
+    flex: 2.5;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
+.status-menu {
+    display: flex;
+    height: 70px;
+    background: white;
+    padding: 1rem;
+    border-radius: 0 2rem 0 0;
+}
+
+
+.contents {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    margin-bottom: 1rem;
+}
+
+
+.container-contents-overflow {
+    flex: 1;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #5ECBEB);
+    border-radius: 5px;
+}
+
+/* STYLING DAFTAR MATA PELAJARAN */
+.card-hyperlink {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.card img {
+    width: 60px;
+}
+
+.card .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+.progress {
+    background: linear-gradient(to right top, #6398FF, #5ECBEB);
+    width: 100%;
+    height: 16px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236, 236, 236);
+    position: absolute;
+    left: 60%;
+}
+
+.percentage {
+    font-weight: bold;
+}
+
+
+/* STYLING DAFTAR KONTEN TIMELINE */
+.card-timeline {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.card-timeline img {
+    height: 100%;
+}
+
+.card-timeline .timeline-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    padding-left: 1rem;
+}
+
+/* STYLING DAFTAR BAB */
+.card-chapter {
+    display: flex;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
+    justify-content: space-between;
+}
+
+.card-chapter .chapter-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+/* STYLING DAFTAR SUBBAB */
+
+
+.card-subchapter {
+    width: 30%;
+    background: linear-gradient(to left top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+    border-radius: 1rem;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    font-size: 0.9rem;
+    box-shadow: 3px 3px 10px rgba(122, 122, 122, 0.2);
+    /* justify-content: space-between; */
+    text-align: center;
+}
+
+.card-subchapter .chapter-info {
+    padding-left: 1rem;
+}
